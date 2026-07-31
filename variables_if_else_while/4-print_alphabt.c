@@ -1,21 +1,27 @@
+/*
+ * 4-print_alphabet.c - Prints lowercase alphabet except q and e
+ */
+
 #include <stdio.h>
 
 /**
- * main - Prints the alphabet in lowercase, except q and e, followed by a new line.
- *
- * Return: Always 0 (Success).
+ * main - Entry point
+ * Description: Prints lowercase alphabet excluding 'q' and 'e',
+ * followed by newline
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	char letter;
+	char c;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		if (letter != 'q' && letter != 'e')
+		if (c != 'q' && c != 'e')
 		{
-			putchar(letter);
+			putchar(c);
 		}
 	}
+
 	putchar('\n');
 
 	return (0);
