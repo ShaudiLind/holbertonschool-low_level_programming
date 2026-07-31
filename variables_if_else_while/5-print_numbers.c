@@ -1,19 +1,25 @@
+/*
+ * 5-print_numbers.c - Prints all single digit numbers of base 10
+ */
+
 #include <stdio.h>
 
 /**
- * main - Prints all single digit numbers of base 10 starting from 0, followed by a new line.
- *
- * Return: Always 0 (Success).
+ * main - Entry point
+ * Description: Prints all single digit numbers (0-9) followed by newline
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	int number;
+	int i;
 
-	for (number = 0; number <= 9; number++)
+	for (i = 0; i <= 9; i++)
 	{
-		putchar(number + '0');
+		putchar(i + '0');
 	}
+
 	putchar('\n');
 
 	return (0);
 }
+
