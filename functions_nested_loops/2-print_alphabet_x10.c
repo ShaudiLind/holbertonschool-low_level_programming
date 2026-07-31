@@ -1,7 +1,3 @@
-/*
- * 2-print_alphabet_x10.c - Function to print alphabet 10 times
- */
-
 #include "main.h"
 
 /**
