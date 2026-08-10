@@ -11,12 +11,6 @@
 
 char *create_array(unsigned int size, char c)
 {
-    /* your code here */
-}
-
-
-char *create_array(unsigned int size, char c)
-{
 	char *array;
 	unsigned int i;
 
