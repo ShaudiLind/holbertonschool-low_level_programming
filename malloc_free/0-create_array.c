@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * creates an array of chars, and initializes it with a specific char.
+ * create array creates an array of chars, and initializes it with a specific char.
  * @size: the size of the array
  * @c: the char to initialize the array with
  *
@@ -28,6 +28,7 @@ char *create_array(unsigned int size, char c)
 	/* Initialize the array */
 	for (i = 0; i < size; i++)
 		array[i] = c;
+
 
 	return (array);
 }
