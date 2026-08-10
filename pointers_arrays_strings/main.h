@@ -11,6 +11,7 @@ void rev_string(char *s);
 void puts2(char *str);
 void reset_to_98(int *n);
 void puts2(char *str);
+void puts_half(char *str);
 /* Add other function prototypes here as you complete more tasks */
 
 #endif
