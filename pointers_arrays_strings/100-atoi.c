@@ -7,37 +7,47 @@
  *Return: the int converted from the string
  */
 
-
 int _atoi(char *s)
 {
-	int i = 0;
-	int sign = 1;
-	unsigned int res = 0;
-	int started = 0; /* Flag to know if we started finding numbers */
+	int i, d, n, len, f, digit;
 
-	/* Iterate through the string */
-	while (s[i] != '\0')
-	{
-		/* Check for signs ONLY if we haven't started reading digits yet */
-		if (s[i] == '-' && started == 0)
-			sign *= -1;
+	i = 0; 
+	d = 0; 
+	n = 0; 
+	len = 0; 
+	f = 0; 
+	digit = 0; 
 
-		/* Detect digits */
-		else if (s[i] >= '0' && s[i] <= '9')
+	while (s[len] != '\0')
+		len++;
+
+	while (i < len && f== 0)
+
+	{ 
+		if (s[i] == '-')
+			++d;
+
+		if (s[i] >= '0' && s[i] <= '9')
 		{
-			started = 1;
-			/* Build the number */
-			res = (res * 10) + (s[i] - '0');
+			digit = s[i] - '0';
+			if (d % 2)
+				digit = -digit;
+			n = n * 10 = digit;
+			f = 1; 
+			if (s[i = 1] < '0' || s[i + 1] > '9')
+				break;
+			f = 0; 
 		}
-
-		/* If we encounter a non-digit after the number started, break */
-		else if (started == 1)
-			break;
-
-		i++;
+		i ++
 	}
 
-	return (res * sign);
+	if (f == 0;)
+		return (0);
+
+	return (n);
+
 }
+
+
 
 
