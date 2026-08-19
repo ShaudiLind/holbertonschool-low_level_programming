@@ -1,26 +1,24 @@
-/* 
- * If the loop finishes, it means one (or both) strings hit the null terminator.
- *  Compare the null terminators themselves. If they are both '\0', the 
- * result is 0.
+/**
+ * _strcmp - compares two strings
+ * @s1: the first string
+ * @s2: the second string
+ *
+ * Return: 0 if equal, otherwise the difference
  */
-
-
 int _strcmp(char *s1, char *s2)
 {
 	int i = 0;
 
-	/* Loop until you hit the end of a string or find a mismatch */
-	while (s1[i] != '\0' && s2[i] != '\0')
+	while (s1[i] == s2[i])
 	{
-		/* If characters differ, return the difference immediately */
-		if (s1[i] != s2[i])
+		if (s1[i] == '\0')
 		{
-			return (s1[i] - s2[i]);
+			return (0);
 		}
 		i++;
 	}
-
-
 	return (s1[i] - s2[i]);
 }
+
+
 
