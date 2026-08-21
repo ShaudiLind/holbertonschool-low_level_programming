@@ -25,6 +25,12 @@ int _sqrt_recursion(int n);
 /* Task 6 prototype */
 int is_prime_number(int n);
 
+/* Task 7 prototype */
+int is_palindrome(char *s);
+
+/* Task 8 prototype */
+int wildcmp(char *s1, char *s2);
+
 
 /* Add prototypes for your future tasks here, for example: */
 /* void _print_rev_recursion(char *s); */
