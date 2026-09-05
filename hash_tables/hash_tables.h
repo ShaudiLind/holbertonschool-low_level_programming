@@ -31,5 +31,23 @@ char *shash_table_get(const shash_table_t *ht, const char *key);
 void shash_table_print(const shash_table_t *ht);
 void shash_table_print_rev(const shash_table_t *ht);
 void shash_table_delete(shash_table_t *ht);
+
+typedef struct shash_node_s
+{
+     char *key;
+     char *value;
+     struct shash_node_s *next;
+     struct shash_node_s *sprev; /* Pointer to the previous element in the sorted linked list */
+     struct shash_node_s *snext; /* Pointer to the next element in the sorted linked list */
+} shash_node_t;
+
+typedef struct shash_table_s
+{
+     unsigned long int size;
+     shash_node_t **array;
+     shash_node_t *shead; /* Pointer to the first element of the sorted linked list */
+     shash_node_t *stail; /* Pointer to the last element of the sorted linked list */
+} shash_table_t;
+
 #endif
 
