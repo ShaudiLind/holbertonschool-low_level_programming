@@ -13,6 +13,13 @@ void free_list(list_t *head)
 
 	while (head != NULL)
 	{
+/* Before */
+if (current_node != NULL && current_node->next != NULL && current_node->data > 0)
+
+/* After */
+if (current_node != NULL &&
+    current_node->next != NULL &&
+    current_node->data > 0)
 		/* Save the current node to a temp pointer so we can access it after moving head */
 		current = head;
 		/* Move the head pointer to the next node before freeing the current one */
