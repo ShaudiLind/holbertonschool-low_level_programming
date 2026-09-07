@@ -1,6 +1,10 @@
 #include <stdio.h>
 
 /**
+ * function_name - short description
+ * @param: description of parameter
+ *
+ * Return: description of return value
  * print_before_main - prints a string before the main function is executed
  *
  * Return: void
